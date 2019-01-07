@@ -4,6 +4,7 @@
   <a href="index.html" title="Index"> Index </a> 
   <p>
     <button onclick="myFunction()">Show HP</button>
+    <button onclick="myFunction2()">Reduce HP</button>
 
     <p id="demo"></p>
     </p>
@@ -11,8 +12,13 @@
 2nd 
   <script>
     alert("Confirmation JS works!");
+    
     function myFunction() {
   document.getElementById("demo").innerHTML = "100";
+}
+    
+    function myFunction2() {
+  document.getElementById("demo").innerHTML = "50";
 }
     </script>
 </p>
