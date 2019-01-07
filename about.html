@@ -2,11 +2,18 @@
   <body>//
     
   <a href="index.html" title="Index"> Index </a> 
-  
+  <p>
+    <button onclick="myFunction()">Show HP</button>
+
+    <p id="demo"></p>
+    </p>
 <p>
 2nd 
   <script>
     alert("Confirmation JS works!");
+    function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
     </script>
 </p>
     </body>
