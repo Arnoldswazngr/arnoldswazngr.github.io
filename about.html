@@ -1,36 +1,72 @@
 <html>
-  <body>//
-    
-  <a href="index.html" title="Index"> Index </a> 
-    <img src="https://arnoldswazngr.github.io/Knight-concept-art.jpg" alt="Knight Class" style="width:50px;height:60px;">
-  <p>
-    <button onclick="myFunction()">Current HPP</button>
-    <button onclick="myFunction2()">Reduce HP</button>
+  <body>
 
-    <p id="demo"></p>
-    </p>
-<p>
-2nd 
-  <script>
-     document.getElementById("demo").innerHTML = "Current HP";
-document.getElementById("demo").innerHTML = "=";
-     document.getElementById("demo").innerHTML = 100;
-}
-    
-    
-    function myFunction() {
-      var x=100;
-  document.getElementById("demo").innerHTML = "100";
-}
-    
-    function myFunction2() {
-      var x-=10;
-  document.getElementById("demo").innerHTML = "50";
 
+<button onclick="myFunction()">Damage!</button>
+<button onclick="myFunction2()">reset hp</button>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+var x=100;
+var y= "you lose";
+var z=Math.floor(Math.random() * (25 - 10 + 1)) + 10;
+
+document.getElementById("demo").innerHTML = x;
+  
+  function myFunction() 
+{
+y="";
+document.getElementById("demo2").innerHTML = y;
+
+if (x>=1)
+{x-=z}
+
+if(z>=16)
+{
+y="Critical Strike"
+document.getElementById("demo2").innerHTML = y;
 }
-    </script>
+
+z=Math.floor(Math.random() * (25 - 10 + 1)) + 10;
+
+  document.getElementById("demo").innerHTML = x;
+
+
+
+
+
+
+  if (x<=0)
+ {
+ y="you lose";
+ document.getElementById("demo2").innerHTML = y;
+ x=0;
+ document.getElementById("demo").innerHTML = x;
+ }
+  }
+  
+ 
+  
+   function myFunction2() 
+{
+x=100;
+  document.getElementById("demo").innerHTML = x;
+  
+  y="";
+  
+   document.getElementById("demo2").innerHTML = y;
+}
   
   
-</p>
-    </body>
+
+
+
+
+
+</script>
+
+</body>
 </html>
